@@ -6,6 +6,7 @@ import clsx from "clsx";
 export default function Header() {
   const headerList = headers();
   const pathname = headerList.get("x-current-path");
+  console.log(pathname);
   return (
     <header className="container mx-auto">
       <div className="flex justify-between items-center pt-7">
@@ -29,7 +30,7 @@ export default function Header() {
                 "border-b-transparent": pathname !== "/about",
               })}
             >
-              <Link href="/about">About</Link>
+              <Link href="#about">About</Link>
             </li>
             <li
               className={clsx("border-b transition-colors hover:border-b-gray-800",{
