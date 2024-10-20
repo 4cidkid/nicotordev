@@ -4,18 +4,18 @@
 
 @layer base {
   h1 {
-    @apply font-title text-4xl font-bold;
+    @apply font-title text-4xl font-bold text-gray-800;
   }
 
   h2 {
-    @apply font-subtitle text-2xl font-semibold;
+    @apply font-subtitle text-2xl font-semibold text-gray-800;
   }
 
   p {
-    @apply font-body text-base;
+    @apply font-body text-base text-gray-800;
   }
 
   blockquote {
-    @apply font-highlight text-lg italic;
+    @apply font-highlight text-lg italic text-gray-800;
   }
 }
